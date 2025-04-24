@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example_project"
+version = "0.1.0"
+description = "An example Python project."
+authors = [
+    { name = "Harihran", email = "thavaahariharangit@github.com" }
+]
+dependencies = [
+    "structlog"
+]
+
+[tool.poetry]
+name = "example_project"
+version = "0.1.0"
+description = "An example Python project."
+authors = ["Harihran <thavaahariharangit@github.com>"]
