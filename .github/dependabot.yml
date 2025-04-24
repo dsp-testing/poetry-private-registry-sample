@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    insecure-external-code-execution: allow
+    versioning-strategy: "increase"
+    schedule:
+      interval: "daily"
+    registries:
+      - jfrog-artifactroy
+
+registries:
+  jfrog-artifactroy:
+    type: "python-index"
+    url: "https://jfrogghdemo.jfrog.io/artifactory/dependabot-pip"
+    username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
+    password: "${{ secrets.JFROG_ARTIFACTORY_TOKEN }}"
